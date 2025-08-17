@@ -9,5 +9,4 @@
 5. 故障回饋表單 ok
 6. 自我介紹 ok
 
-額外:
-1. 幻燈片效果
+https://mickey910.github.io/Frontend-Class/
