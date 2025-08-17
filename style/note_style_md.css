@@ -1,0 +1,107 @@
+body {
+  font-family: 'Times New Roman', Times, Arial;
+  padding: 20px;
+  background: #f1f1f1;
+  background-color: rgb(144, 186, 200);
+
+  /* 設定背景圖片路徑 */
+  background-image: url('background.jpg');
+  /* background-image: url("https://cdn.pixabay.com/photo/2017/03/27/12/50/flower-2178507_1280.jpg"); */
+
+  /* 背景圖片填滿整個視窗 */
+  background-size: cover;
+
+  /* 固定背景，會隨滾動條移動 */
+  background-attachment: fixed;
+
+  /* 置中顯示圖片 */
+  background-position: center;
+
+  /* 防止圖片重複 */
+  background-repeat: no-repeat;
+
+  /* 設定文字顏色，避免被背景蓋掉 */
+  /* color: black; */
+}
+
+/* Header/Blog Title */
+h1 {
+  font-family: 'Lucida Handwriting', cursive;
+  padding: 50px;
+  font-size: 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 2px dashed #f1f1f1;
+  /* border-radius: 20px; */
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #ffffff;
+  margin-top: 20px;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+.container {
+  max-width: auto;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 12px;
+  box-shadow: 0 0 20px black;
+  opacity: 0;
+  transition: opacity 0.8s;
+  color:#1b1b1b;
+}
+
+.container.visible {
+  opacity: 1;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+/* 連結樣式 */
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 導覽列背景 */
+nav {
+  background-color: #333;
+  padding: 0.8rem;
+}
+
+/* hover 效果 */
+nav a:hover {
+  background-color: #555;
+  border-radius: 6px;
+}
+/*///////////////////////////////////////////////////////////*/
+.note{
+  background-color: #ffffffb4;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-left: 4px solid #666;
+}
+
+main h1 {
+  font-family: 'Times New Roman', Times, Arial;
+  padding: 20px;
+  color:#f1f1f1;
+  border: 0;
+}  

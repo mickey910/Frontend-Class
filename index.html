@@ -7,47 +7,73 @@
   </head>
   <!--////////////////////////////////////////////////////////////////////////////////////////-->
   <body>
-    <div class="header  transparent-bg">
-      <h1 class="subject">Mickey Blog</h1>
-    </div>
+    <!-- HEADER -->
+    <header>
+      <h1>Mickey Blog</h1>
+      <nav>
+      <a href="index.html">首頁</a>
+      <a href="about_me.html">關於我</a>
+      <a href="notes.html">學習筆記</a>
+      <a href="interesting.html">趣聞分享</a>
+      <a href="forum.html">討論區</a>
+      <a href="bug_repo.html">故障回饋表單</a>
+      </nav>
+    </header>
 
-    <div class="row">
-
+    <main class="row container">
+      <!-- LEFT COLUMN: 學習筆記,從notes料夾叫出來 -->
       <div class="leftcolumn">
 
         <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height: 200px">Image</div>
-          <p>Some text..</p>
+          <article class="post">
+          <h2><a href="notes/note1.html">note1</a></h2>
+          <p>writting with html。</p>
+          </article>
         </div>
 
         <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height: 200px">Image</div>
-          <p>Some text..</p>
+          <article class="post">
+          <h2><a href="notes/note2.html">note2</a></h2>
+          <p>write with Markdown</p>
+          </article>
         </div>
 
+        <div class="card">
+          <article class="post">
+          <!-- <h2><a href="html/Introduction on Data Analytics & Mining2.html">note3</a></h2> -->
+           <h2><a href="notes/note3.html">note3</a></h2>
+          <p>recommend translate .md to .html first ,but still need reload img by yourself!!(I use hackmd to translate files)</p>
+          </article>
+        </div>
       </div>
-
+      <!-- RIGHT COLUMN: 關於我、趣聞分享、LINKS -->
       <div class="rightcolumn">
-
+        <!-- 關於我 -->
         <div class="card">
           <h2>About Me</h2>
+          <a href ="about_me.html">
           <img src="img/myhead.png" alt="yellow head" width="100" height="100" />
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </a>
+          <p>How am I ? <br>Click my head img to get answer!! </p>
         </div>
-
+        <!-- INTERESTING YOUTUBE -->
         <div class="card">
-          <h3>Interesting</h3>
-          <div class="fakeimg">Image</div>
-          <br />
-          <div class="fakeimg">Image</div>
-          <br />
-          <div class="fakeimg">Image</div>
+          <h3>Interesting Youtube</h3>
+            <div class="fakeimg">
+              <a href="https://www.youtube.com/@ladyflavor_brain">
+                好味小姐腦波弱Youtube
+              </a>
+            </div>
+            <br />
+            <div class="fakeimg">
+              <a href="https://youtube.com/playlist?list=PLrRVVnlHvRfrqjctl-2u_Av4iWn_0p_vv&si=JVVdHCaJ4imgPaB0">
+                my playlist
+              </a>
+            </div>
+            <br />
+            <div class="fakeimg">nothing</div>
         </div>
-
+        <!-- LINKS -->
         <div class="card">
           <h3>Links</h3>
           <ul>
@@ -57,17 +83,12 @@
           </ul>
         </div>
 
-        <div class="card">
-          <h3>Bug</h3>
-          <p>Some text..</p>
-        </div>
-
       </div>
 
-    </div>
+    </main>
 
     <div class="footer">
-      <h2>Footer</h2>
+      <h4>If there's a bug, please report it! Thanks for your feedback!</h4>
     </div>
 
     <script src="script.js"></script>

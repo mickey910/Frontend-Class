@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Article + Section 範例</title>
+  <link rel="stylesheet" type="text/css" href="../style/note_style_md.css" />
+</head>
+
+<body>
+    <header>
+      <h1>Mickey Blog</h1>
+      <nav>
+      <a href="../index.html">首頁</a>
+      <a href="../about_me.html">關於我</a>
+      <a href="../notes.html">學習筆記</a>
+      <a href="../interesting.html">趣聞分享</a>
+      <a href="../forum.html">討論區</a>
+      <a href="../bug_repo.html">故障回饋表單</a>
+      </nav>
+    </header>    
+    <main class="container">
+      <div id="content"></div>
+    </main>
+
+ <div class="footer">
+      <h4>If there's a bug, please report it! Thanks for your feedback!</h4>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      // 讀取外部 Markdown 檔案
+      fetch('../md/Introduction on Data Analytics & Mining.md')  // note.md 放在同目錄
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById('content').innerHTML = marked.parse(text);
+        })
+      .catch(err => {
+        document.getElementById('content').innerHTML = '無法載入 Markdown';
+        console.error(err);
+      });
+    </script>
+</body>
+</html>
