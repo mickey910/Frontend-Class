@@ -1,6 +1,6 @@
 ---
 title: Introduction on Data Analytics & Mining
-tags: [data analysis class]
+# tags: [data analysis class]
 
 ---
 
