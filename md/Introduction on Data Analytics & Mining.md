@@ -6,7 +6,7 @@ tags: [data analysis class]
 
 # Introduction on Data Analytics & Mining
 ###### tags: `data analysis`
-{%hackmd BJrTq20hE %}
+<!-- {%hackmd BJrTq20hE %} -->
 
 ### Data Analytics (DA)
 • Data analytics is the process of examining data sets
